@@ -1,0 +1,10 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Parallel Methods" parallel="methods" thread-count="4">
+  <parameter name="browser" value="chrome"/>
+  <test name="Sell Parallel">
+    <classes>
+      <class name="com.test.SellAgentTests"/>
+    </classes>
+  </test>
+</suite>

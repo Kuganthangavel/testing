@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-CrossBrowser_Suite" class="navigator-link">
+              <span class="suite-name border-failed">CrossBrowser Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-CrossBrowser_Suite" class="navigator-link ">
+                    <span>C:\Users\kugant\eclipse-workspace 1\MagicBricks_Sell_Maven\bin\crossBrowser.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-CrossBrowser_Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-CrossBrowser_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-CrossBrowser_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-CrossBrowser_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-CrossBrowser_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-CrossBrowser_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 3 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CrossBrowser_Suite" class="hide-methods failed suite-CrossBrowser_Suite"> (hide)</a> <!-- hide-methods failed suite-CrossBrowser_Suite -->
+                      <a href="#" panel-name="suite-CrossBrowser_Suite" class="show-methods failed suite-CrossBrowser_Suite"> (show)</a> <!-- show-methods failed suite-CrossBrowser_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-CrossBrowser_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc01_navigateAndSelectRole">tc01_navigateAndSelectRole</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc05_show_full_kolkata_data">tc05_show_full_kolkata_data</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc06_propertyValue_askFreeQuestion_form">tc06_propertyValue_askFreeQuestion_form</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CrossBrowser_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-CrossBrowser_Suite" class="hide-methods passed suite-CrossBrowser_Suite"> (hide)</a> <!-- hide-methods passed suite-CrossBrowser_Suite -->
+                      <a href="#" panel-name="suite-CrossBrowser_Suite" class="show-methods passed suite-CrossBrowser_Suite"> (show)</a> <!-- show-methods passed suite-CrossBrowser_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-CrossBrowser_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc01_navigateAndSelectRole">tc01_navigateAndSelectRole</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc02_openPackages_and_select_Individual_Sell_Residential_then_show">tc02_openPackages_and_select_Individual_Sell_Residential_then_show</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc02_openPackages_and_select_Individual_Sell_Residential_then_show">tc02_openPackages_and_select_Individual_Sell_Residential_then_show</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc03_openDeveloperLounge_and_click_MohitGoel">tc03_openDeveloperLounge_and_click_MohitGoel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc03_openDeveloperLounge_and_click_MohitGoel">tc03_openDeveloperLounge_and_click_MohitGoel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc04_submit_empty_callback_request">tc04_submit_empty_callback_request</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc04_submit_empty_callback_request">tc04_submit_empty_callback_request</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc05_show_full_kolkata_data">tc05_show_full_kolkata_data</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc06_propertyValue_askFreeQuestion_form">tc06_propertyValue_askFreeQuestion_form</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc07_submit_callback_request_with_data(kugan, 8220067539, kuganthangavel39@gmail.com, Delhi, when i will recieve my report?)">tc07_submit_callback_request_with_data(kugan, 8220067539, kuganthangavel39@gmail.com, Delhi, when i will recieve my report?)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CrossBrowser_Suite" title="com.test.SellAgentTests" class="method navigator-link" hash-for-method="tc07_submit_callback_request_with_data(kugan, 8220067539, kuganthangavel39@gmail.com, Delhi, when i will recieve my report?)">tc07_submit_callback_request_with_data(kugan, 8220067539, kuganthangavel39@gmail.com, Delhi, when i will recieve my report?)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CrossBrowser_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-CrossBrowser_Suite" class="panel CrossBrowser_Suite">
+          <div class="suite-CrossBrowser_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test.SellAgentTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_navigateAndSelectRole">
+                  </a> <!-- tc01_navigateAndSelectRole -->
+                  <span class="method-name">tc01_navigateAndSelectRole</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=145.0.7632.160)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3c63eb2342a786813114f520fd13929c, clickElement {id=f.E65F80FB5192CD269B807988D1699B26.d.62E17B5EF0801B16E7119364C4B96B6B.e.80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\kugant\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60236}, goog:processID: 31812, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60236/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3c63eb2342a786813114f520fd13929c)] -&gt; xpath: (//a[text()=&apos;Find an Agent&apos;])[3]]
+Session ID: 3c63eb2342a786813114f520fd13929c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.utils.ElementUtils.clickOnElement(ElementUtils.java:20)
+	at com.pages.HomePage.clickAgent(HomePage.java:55)
+	at com.test.SellAgentTests.tc01_navigateAndSelectRole(SellAgentTests.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc05_show_full_kolkata_data">
+                  </a> <!-- tc05_show_full_kolkata_data -->
+                  <span class="method-name">tc05_show_full_kolkata_data</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=145.0.7632.160)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6342e1d54128de9616933a24e55e6543, clickElement {id=f.6C545023413FDAB8E25D22C740A03753.d.789C9933242D7711157077EFDED19B27.e.58}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\kugant\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57259}, goog:processID: 28104, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57259/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6342e1d54128de9616933a24e55e6543)] -&gt; xpath: //a[normalize-space()=&apos;Sales Enquiry&apos;]]
+Session ID: 6342e1d54128de9616933a24e55e6543
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.utils.ElementUtils.clickOnElement(ElementUtils.java:20)
+	at com.pages.HomePage.openSalesEnquiry(HomePage.java:178)
+	at com.test.SellAgentTests.tc05_show_full_kolkata_data(SellAgentTests.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc06_propertyValue_askFreeQuestion_form">
+                  </a> <!-- tc06_propertyValue_askFreeQuestion_form -->
+                  <span class="method-name">tc06_propertyValue_askFreeQuestion_form</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: ask-advice-name&apos;
+(tried for 10 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at com.pages.HomePage.fillAskFreeQuestionForm(HomePage.java:248)
+	at com.test.SellAgentTests.tc06_propertyValue_askFreeQuestion_form(SellAgentTests.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ask\-advice\-name&quot;}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.18&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c19a53ebc772333a534e297eb5c0b99b, findElement {using=id, value=ask-advice-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\kugant\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51875}, goog:processID: 35680, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51875/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c19a53ebc772333a534e297eb5c0b99b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 24 more
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowser_Suite-class-failed -->
+          <div class="suite-CrossBrowser_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.SellAgentTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_navigateAndSelectRole">
+                  </a> <!-- tc01_navigateAndSelectRole -->
+                  <span class="method-name">tc01_navigateAndSelectRole</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc02_openPackages_and_select_Individual_Sell_Residential_then_show">
+                  </a> <!-- tc02_openPackages_and_select_Individual_Sell_Residential_then_show -->
+                  <span class="method-name">tc02_openPackages_and_select_Individual_Sell_Residential_then_show</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc02_openPackages_and_select_Individual_Sell_Residential_then_show">
+                  </a> <!-- tc02_openPackages_and_select_Individual_Sell_Residential_then_show -->
+                  <span class="method-name">tc02_openPackages_and_select_Individual_Sell_Residential_then_show</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc03_openDeveloperLounge_and_click_MohitGoel">
+                  </a> <!-- tc03_openDeveloperLounge_and_click_MohitGoel -->
+                  <span class="method-name">tc03_openDeveloperLounge_and_click_MohitGoel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc03_openDeveloperLounge_and_click_MohitGoel">
+                  </a> <!-- tc03_openDeveloperLounge_and_click_MohitGoel -->
+                  <span class="method-name">tc03_openDeveloperLounge_and_click_MohitGoel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc04_submit_empty_callback_request">
+                  </a> <!-- tc04_submit_empty_callback_request -->
+                  <span class="method-name">tc04_submit_empty_callback_request</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc04_submit_empty_callback_request">
+                  </a> <!-- tc04_submit_empty_callback_request -->
+                  <span class="method-name">tc04_submit_empty_callback_request</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc05_show_full_kolkata_data">
+                  </a> <!-- tc05_show_full_kolkata_data -->
+                  <span class="method-name">tc05_show_full_kolkata_data</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc06_propertyValue_askFreeQuestion_form">
+                  </a> <!-- tc06_propertyValue_askFreeQuestion_form -->
+                  <span class="method-name">tc06_propertyValue_askFreeQuestion_form</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc07_submit_callback_request_with_data(kugan, 8220067539, kuganthangavel39@gmail.com, Delhi, when i will recieve my report?)">
+                  </a> <!-- tc07_submit_callback_request_with_data(kugan, 8220067539, kuganthangavel39@gmail.com, Delhi, when i will recieve my report?) -->
+                  <span class="method-name">tc07_submit_callback_request_with_data</span>
+                  <span class="parameters">(kugan,8220067539,kuganthangavel39@gmail.com,Delhi,when i will recieve my report?)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc07_submit_callback_request_with_data(kugan, 8220067539, kuganthangavel39@gmail.com, Delhi, when i will recieve my report?)">
+                  </a> <!-- tc07_submit_callback_request_with_data(kugan, 8220067539, kuganthangavel39@gmail.com, Delhi, when i will recieve my report?) -->
+                  <span class="method-name">tc07_submit_callback_request_with_data</span>
+                  <span class="parameters">(kugan,8220067539,kuganthangavel39@gmail.com,Delhi,when i will recieve my report?)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowser_Suite-class-passed -->
+        </div> <!-- panel CrossBrowser_Suite -->
+        <div panel-name="test-xml-CrossBrowser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\kugant\eclipse-workspace 1\MagicBricks_Sell_Maven\bin\crossBrowser.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;CrossBrowser Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Chrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.test.SellAgentTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Chrome --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Edge&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.test.SellAgentTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Edge --&gt;
+&lt;/suite&gt; &lt;!-- CrossBrowser Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-CrossBrowser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for CrossBrowser Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Chrome (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Edge (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-CrossBrowser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for CrossBrowser Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-CrossBrowser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for CrossBrowser Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_CrossBrowser_Suite');
+function tableData_CrossBrowser_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'tc06_propertyValue_askFreeQuestion_form')
+data.setCell(0, 2, 'com.test.SellAgentTests')
+data.setCell(0, 3, 34717);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'tc06_propertyValue_askFreeQuestion_form')
+data.setCell(1, 2, 'com.test.SellAgentTests')
+data.setCell(1, 3, 31089);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'tc07_submit_callback_request_with_data')
+data.setCell(2, 2, 'com.test.SellAgentTests')
+data.setCell(2, 3, 28619);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'tc07_submit_callback_request_with_data')
+data.setCell(3, 2, 'com.test.SellAgentTests')
+data.setCell(3, 3, 20619);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'tc01_navigateAndSelectRole')
+data.setCell(4, 2, 'com.test.SellAgentTests')
+data.setCell(4, 3, 18969);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'tc04_submit_empty_callback_request')
+data.setCell(5, 2, 'com.test.SellAgentTests')
+data.setCell(5, 3, 18929);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'tc05_show_full_kolkata_data')
+data.setCell(6, 2, 'com.test.SellAgentTests')
+data.setCell(6, 3, 15690);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'tc03_openDeveloperLounge_and_click_MohitGoel')
+data.setCell(7, 2, 'com.test.SellAgentTests')
+data.setCell(7, 3, 14744);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'tc01_navigateAndSelectRole')
+data.setCell(8, 2, 'com.test.SellAgentTests')
+data.setCell(8, 3, 11836);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'tc02_openPackages_and_select_Individual_Sell_Residential_then_show')
+data.setCell(9, 2, 'com.test.SellAgentTests')
+data.setCell(9, 3, 8956);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'tc05_show_full_kolkata_data')
+data.setCell(10, 2, 'com.test.SellAgentTests')
+data.setCell(10, 3, 8672);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'tc04_submit_empty_callback_request')
+data.setCell(11, 2, 'com.test.SellAgentTests')
+data.setCell(11, 3, 8219);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'tc02_openPackages_and_select_Individual_Sell_Residential_then_show')
+data.setCell(12, 2, 'com.test.SellAgentTests')
+data.setCell(12, 3, 6313);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'tc03_openDeveloperLounge_and_click_MohitGoel')
+data.setCell(13, 2, 'com.test.SellAgentTests')
+data.setCell(13, 3, 4687);
+window.suiteTableData['CrossBrowser_Suite']= { tableData: data, tableDiv: 'times-div-CrossBrowser_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-CrossBrowser_Suite">
+              </div> <!-- times-div-CrossBrowser_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-CrossBrowser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for CrossBrowser Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-CrossBrowser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-CrossBrowser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.SellAgentTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc01_navigateAndSelectRole</span>
+                <span class="method-start">9259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc01_navigateAndSelectRole</span>
+                <span class="method-start">11317 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">23171 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">28231 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc02_openPackages_and_select_Individual_Sell_Residential_then_show</span>
+                <span class="method-start">30821 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">37141 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc02_openPackages_and_select_Individual_Sell_Residential_then_show</span>
+                <span class="method-start">37858 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">46818 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc03_openDeveloperLounge_and_click_MohitGoel</span>
+                <span class="method-start">47044 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">51735 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc03_openDeveloperLounge_and_click_MohitGoel</span>
+                <span class="method-start">57003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc04_submit_empty_callback_request</span>
+                <span class="method-start">63684 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">71752 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">71909 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc04_submit_empty_callback_request</span>
+                <span class="method-start">82345 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc05_show_full_kolkata_data</span>
+                <span class="method-start">84785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">100479 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">101278 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc05_show_full_kolkata_data</span>
+                <span class="method-start">118836 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc06_propertyValue_askFreeQuestion_form</span>
+                <span class="method-start">122934 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">127514 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc06_propertyValue_askFreeQuestion_form</span>
+                <span class="method-start">144671 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">157866 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">175764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc07_submit_callback_request_with_data(kugan, 8220067539, kuganthangavel39@gmail.com, Delhi, when i will recieve my report?)</span>
+                <span class="method-start">176566 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc07_submit_callback_request_with_data(kugan, 8220067539, kuganthangavel39@gmail.com, Delhi, when i will recieve my report?)</span>
+                <span class="method-start">202330 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
