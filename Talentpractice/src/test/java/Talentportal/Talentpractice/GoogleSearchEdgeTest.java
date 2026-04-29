@@ -7,51 +7,45 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
-public class App {
+public class GoogleSearchEdgeTest {
 
     private WebDriver driver;
     private WebDriverWait wait;
 
+    // Common locators and page values
     private final String GOOGLE_URL = "https://www.google.com";
     private final By SEARCH_BOX = By.xpath("//input[@name='q']");
     private final By IMAGE_TAB = By.xpath("//a[contains(@href, 'tbm=isch') or contains(., 'Images')]");
 
-    public static void main(String[] args) {
-        App app = new App();
-        app.runGoogleSearch();
+    @BeforeClass
+    public void setUp() {
+        driver = new EdgeDriver();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        driver.manage().window().maximize();
     }
 
-    public void runGoogleSearch() {
-        setUp();
+    @Test
+    public void openGoogleSearchAndClickImages() {
         openUrl(GOOGLE_URL);
         type(SEARCH_BOX, "saruk khan");
         submit(SEARCH_BOX);
         click(IMAGE_TAB);
-        tearDown();
     }
 
-    private void setUp() {
-        EdgeOptions options = new EdgeOptions();
-        options.addArguments("--start-maximized");
-        options.addArguments("--disable-gpu");
-        options.addArguments("--disable-extensions");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-        
-        driver = new EdgeDriver(options);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    }
-
-    private void tearDown() {
+    @AfterClass
+    public void tearDown() {
         if (driver != null) {
             driver.quit();
         }
     }
 
+    // Generic helper methods for the template
     private void openUrl(String url) {
         driver.get(url);
     }
